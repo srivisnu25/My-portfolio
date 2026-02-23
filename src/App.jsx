@@ -155,7 +155,7 @@ function App() {
                     </div>
                     <div>
                       <h4 className="font-bold uppercase text-xs tracking-widest">Education</h4>
-                      <p className={`text-sm ${darkMode ? 'text-white/60' : 'text-black/60'}`}>B.E. CSE, Pondicherry Engineering College</p>
+                      <p className={`text-sm ${darkMode ? 'text-white/60' : 'text-black/60'}`}>B.E. CSE, Panimalar Engineering College</p>
                       <p className="text-xs font-medium mt-1">2023 — 2027</p>
                     </div>
                   </div>
