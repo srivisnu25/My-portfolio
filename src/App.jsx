@@ -178,8 +178,8 @@ function App() {
             <div className="flex-1 w-full grid grid-cols-2 gap-4 lg:mt-16">
               <StatsCard label="CGPA" value="8.45" darkMode={darkMode} />
               <StatsCard label="Internships" value="2" darkMode={darkMode} />
-              <StatsCard label="Certifications" value="3+" darkMode={darkMode} />
-              <StatsCard label="Projects" value="3" darkMode={darkMode} />
+              <StatsCard label="Certifications" value="2+" darkMode={darkMode} />
+              <StatsCard label="Projects" value="1+" darkMode={darkMode} />
             </div>
           </div>
         </section>
