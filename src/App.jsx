@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// Reusable Stats Card Component
+// Reusable Stats Card Component - Black & White Theme
 const StatsCard = ({ label, value, darkMode }) => (
   <div className={`${darkMode ? 'bg-white/5 border-white/10 hover:bg-white hover:text-black' : 'bg-black/5 border-black/10 hover:bg-black hover:text-white'} border p-6 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 shadow-lg hover:-translate-y-1 group`}>
     <span className={`text-4xl md:text-5xl font-bold mb-1 transition-colors ${darkMode ? 'text-white group-hover:text-black' : 'text-black group-hover:text-white'}`}>{value}</span>
@@ -8,7 +8,7 @@ const StatsCard = ({ label, value, darkMode }) => (
   </div>
 );
 
-// Modern Skill Card
+// Modern Skill Card - Black & White Theme
 const TechnicalSkillCard = ({ title, technologies, darkMode }) => (
   <div className={`${darkMode ? 'bg-white/5 border-white/10 border-l-white hover:bg-white/10' : 'bg-black/5 border-black/10 border-l-black hover:bg-black/10'} border p-5 rounded-2xl transition-all duration-300 border-l-4 shadow-lg hover:scale-[1.02] hover:-translate-y-2 cursor-default`}>
     <h3 className={`text-lg font-bold mb-3 ${darkMode ? 'text-white' : 'text-black'}`}>{title}</h3>
@@ -66,7 +66,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </a>
             ))}
             
-            {/* Theme Toggle Button */}
             <button 
               onClick={() => setDarkMode(!darkMode)}
               className={`p-2 rounded-full border transition-all ${darkMode ? 'border-white/20 text-white hover:bg-white hover:text-black' : 'border-black/20 text-black hover:bg-black hover:text-white'}`}
@@ -125,9 +124,10 @@ function App() {
           </div>
 
           <div className="flex-1 flex justify-center md:justify-end">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:scale-[1.05] group">
-              <div className={`absolute inset-0 rounded-full border-2 animate-pulse transition-colors ${darkMode ? 'border-white/20 group-hover:border-white' : 'border-black/20 group-hover:border-black'}`}></div>
-              <div className={`w-full h-full rounded-full overflow-hidden border-4 shadow-2xl transition-all duration-700 ${darkMode ? 'border-white/10 grayscale group-hover:grayscale-0' : 'border-black/10 grayscale group-hover:grayscale-0'}`}>
+            {/* Pop up feature restored to the photo container below */}
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 transition-all duration-500 ease-in-out hover:-translate-y-4 hover:scale-[1.05]">
+              <div className={`absolute inset-0 rounded-full border-2 animate-pulse transition-colors ${darkMode ? 'border-white/20' : 'border-black/20'}`}></div>
+              <div className={`w-full h-full rounded-full overflow-hidden border-4 shadow-2xl transition-all ${darkMode ? 'border-white/10' : 'border-black/10'}`}>
                 <img src="/Formal.png" alt="Srivisnu S" className="w-full h-full object-cover" />
               </div>
             </div>
